@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 20px;
+}
+.box{
+    height:50px;
+    width:50px;
+    border-radius:50%;
+    /* border:2px solid red; */
+    background: red;
+    /* margin: auto; */
+    animation-name:myanime;
+    animation-duration:5s;
+    animation-delay: 3s;
+    animation-iteration-count: 2;
+    animation-fill-mode: forwards;
+    position: relative;
+    animation-duration: reverse;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes myanime{
+  
+  0%{
+    top: 0;
+    left: 0;
+    background: blueviolet;
+  }
+
+  20%{
+    background: powderblue;
+  }
+  25%{
+  top: 0;
+  left: 750px;
+ background: blueviolet;
+  }
+ 
+  40%{
+    background: orange;
+  }
+  50%{
+    top: 350px;
+    left: 750px;
+    background: blueviolet;
+  }
+  60%{ background: darkslateblue;}
+ 
+  75%{
+    top: 350px;
+    left: 0px;
+    background: blueviolet;
+  }
+  80%{
+    background: aqua;
+  }
+  90%{
+    background: wheat;
+  }
+  100%{
+     top: 0px;
+    left: 0px;
+    background: blueviolet;
+  }
+}
